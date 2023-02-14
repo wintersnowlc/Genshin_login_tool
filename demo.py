@@ -265,7 +265,7 @@ def main():
                 # 确认
                 res = json.loads(res.text)
                 if login_sleep:
-                    time.sleep(random.random() + 3)
+                    time.sleep(random.random() + 1)
                 if res['retcode'] == 0:
                     print(f'抢码成功：{t2 - t1:.4f}')
                     res = call_confirm(user, ticket, session)
